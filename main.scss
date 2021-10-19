@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+$darkcyan: hsl(185, 75%, 39%);
+$darkblue: hsl(229, 23%, 23%);
+$grayishblue: hsl(227, 10%, 46%);
+$darkgray: hsl(0, 0%, 59%);
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    background: $darkcyan;
+    background-image: url('/images/bg-pattern-top.svg'), url('/images/bg-pattern-bottom.svg');
+    background-size: 55%, 55%;
+    background-repeat: no-repeat, no-repeat;
+    background-position: top -300px left -100px, bottom -350px right -150px;
+
+    @media(max-width: 375px) {
+        background-size: 100% 50%, 100% 75%;
+        background-position: top -50% left -200px, bottom -130% right -200px;
+    }
+}
+
+
+main {
+    position: relative;
+    top: 25%;
+    width: 30%;
+    height: 50%;
+    background: #FFF;
+    margin: 0 auto;
+    border-radius: 20px;
+
+    @media(max-width: 375px) {
+        width: 90%;
+        height: 60%;
+        top: 15%;
+    }
+
+    .card__header {
+        width: 100%;
+        height: 38%;
+        background: url('/images/bg-pattern-card.svg');
+        border-radius: 20px 20px 0 0;
+
+        @media(max-width: 375px) {
+            height: 30%;
+        }
+
+        img {
+            width: 30%;
+            position: absolute;
+            border-radius: 50%;
+            border: solid 4px #FFF;
+            top: 23%;
+            left: 34.5%;
+
+            @media(max-width: 375px) {
+                top: 20%;
+            }
+        }
+    }
+
+    .card__container {
+        @media(max-width: 375px) {
+            height: 50%;
+        }
+
+        h1 {
+            text-align: center;
+            color: $darkblue;
+
+            span {
+                color: $darkgray;
+                font-size: 32px;
+            }
+        }
+
+        p {
+            color: $darkgray;
+            text-align: center;
+        }
+    }
+
+    .card__footer {
+        display: flex;
+        height: 20%;
+        justify-content: space-around;
+        text-align: center;
+        align-items: center;
+        font-weight: 700;
+        border-top: 0.5px solid $darkgray;
+
+        span {
+            color: $darkgray;
+            font-size: 14px;;
+        }
+    }
+}
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+}
+
