@@ -10,7 +10,7 @@ body {
   font-size: 18px;
   background: #19a2ae;
   background-image: url("/images/bg-pattern-top.svg"), url("/images/bg-pattern-bottom.svg");
-  background-size: 55%, 55%;
+  background-size: 50%, 50%;
   background-repeat: no-repeat, no-repeat;
   background-position: top -300px left -100px, bottom -350px right -150px;
 }
@@ -23,9 +23,9 @@ body {
 
 main {
   position: relative;
-  top: 25%;
+  top: 150px;
   width: 30%;
-  height: 50%;
+  height: 60%;
   background: #FFF;
   margin: 0 auto;
   border-radius: 20px;
@@ -33,8 +33,6 @@ main {
 @media (max-width: 375px) {
   main {
     width: 90%;
-    height: 60%;
-    top: 15%;
   }
 }
 main .card__header {
@@ -49,12 +47,12 @@ main .card__header {
   }
 }
 main .card__header img {
-  width: 30%;
+  width: 25%;
   position: absolute;
   border-radius: 50%;
   border: solid 4px #FFF;
   top: 23%;
-  left: 34.5%;
+  left: 37%;
 }
 @media (max-width: 375px) {
   main .card__header img {
@@ -80,7 +78,7 @@ main .card__container p {
 }
 main .card__footer {
   display: flex;
-  height: 20%;
+  height: 25%;
   justify-content: space-around;
   text-align: center;
   align-items: center;
